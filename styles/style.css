@@ -11,15 +11,16 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  background-image: var(--bg-page-gradient);
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 100px;
+  margin: 100px 0;
+  background-image: var(--bg-page-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
 }
 
 @supports (font-variation-settings: normal) {
@@ -29,17 +30,107 @@
 }
 
 .header {
+  padding: var(--header-padding);
   font-family: var(--accent-text-font-family), sans-serif;
   text-align: center;
   text-transform: uppercase;
-  padding: var(--header-padding);
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-end: 20px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__additional-title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.card {
+  font-size: var(--card-font-size);
+}
+
+.card__title {
+  padding: 4px 10px;
+  font-weight: var(--card-title-font-wght);
+  font-size: inherit;
+}
+
+.accent-card__title {
+  font-weight: var(--accent-card-title-font-wght);
+}
+
+.image__container {
+  position: relative;
+  inline-size: inherit;
+}
+
+.card__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: inherit;
+}
+
+.card__label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  font-family: var(--accent-text-font-family), sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 1px var(--text-stroke-color);
+  mix-blend-mode: hard-light;
+}
+
+@supports (text-stroke: 1px var(--text-stroke-color)) or
+  (-webkit-text-stroke: 1px var(--text-stroke-color)) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px #fff;
+  }
+}
+
+.description__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+}
+
+.card__description {
+  font-weight: var(--card-description-font-wght);
+}
+
+.accent-card__description {
+  font-weight: var(--accent-card-description-font-wght);
+}
+
+.button__container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.card__button {
+  font-family: var(--accent-text-font-family), sans-serif;
+  background-color: transparent;
+}
+
+.card__icon-button {
+  border: none;
+}
+
+.like-icon {
+  display: block;
+}
+
+.card__like-button {
+  padding: 12.5px 37px;
+}
+
+.button__text {
+  font-size: 0.875rem;
+  line-height: 90%;
 }

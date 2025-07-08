@@ -3,7 +3,7 @@
   --text-font-family: "Inter-Variable";
   --accent-text-font-family: "PressStart2P";
   --card-description-font-wght: 400;
-  --accent-card-description-font-wght-more: 410;
+  --accent-card-description-font-wght: 410;
   --card-title-font-wght: 700;
   --accent-card-title-font-wght: 715;
   --bg-page-gradient: repeating-linear-gradient(
@@ -20,5 +20,10 @@
 
   --page-component-wdth: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 
-  --header-padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem) clamp(1rem, -1.3438rem + 10vw, 7.65625rem);
+  --header-padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem)
+    clamp(1rem, -1.3438rem + 10vw, 7.65625rem);
+
+  --card-font-size: 18px;
+
+  --text-stroke-color: #fff;
 }
