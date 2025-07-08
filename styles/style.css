@@ -13,6 +13,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-page-gradient);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @supports (font-variation-settings: normal) {

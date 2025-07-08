@@ -1,9 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --text-font-family: 'Inter-Variable';
-  --accent-text-font-family: 'PressStart2P';
+  --text-font-family: "Inter-Variable";
+  --accent-text-font-family: "PressStart2P";
   --card-description-font-wght: 400;
   --accent-card-description-font-wght-more: 410;
   --card-title-font-wght: 700;
   --accent-card-title-font-wght: 715;
+  --bg-page-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      rgba(211, 211, 211, 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      rgba(211, 211, 211, 0) 2px 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.1%, #1a1a1a 100%);
 }
