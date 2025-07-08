@@ -14,3 +14,9 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--text-font-family), sans-serif;
+  }
+}
