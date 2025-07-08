@@ -16,10 +16,30 @@
   background-image: var(--bg-page-gradient);
   background-size: cover;
   background-attachment: fixed;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @supports (font-variation-settings: normal) {
   .page {
     font-family: var(--text-font-family), sans-serif;
   }
+}
+
+.header {
+  font-family: var(--accent-text-font-family), sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: var(--header-padding);
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-end: 20px;
+}
+
+.header__additional-title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }

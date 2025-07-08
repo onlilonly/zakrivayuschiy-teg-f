@@ -51,3 +51,9 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.page__component {
+  outline: 2px solid #000;
+  inline-size: var(--page-component-wdth);
+  background-color: #fff;
+}
