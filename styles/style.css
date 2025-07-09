@@ -26,6 +26,21 @@
   .page {
     font-family: var(--text-font-family), sans-serif;
   }
+  .card__title {
+    font-variation-settings: "wght" var(--card-title-font-wght);
+  }
+
+  .card__description {
+    font-variation-settings: "wght" var(--card-description-font-wght);
+  }
+
+  .accent-card__description {
+    font-variation-settings: "wght" var(--accent-card-description-font-wght);
+  }
+
+  .accent-card__title {
+    font-variation-settings: "wght" var(--accent-card-title-font-wght);
+  }
 }
 
 .header {
@@ -61,12 +76,7 @@
 
 .card__title {
   padding: 5px 10px;
-  font-weight: var(--card-title-font-wght);
   font-size: inherit;
-}
-
-.accent-card__title {
-  font-weight: var(--accent-card-title-font-wght);
 }
 
 .image__container {
@@ -82,8 +92,7 @@
 }
 
 .invert-image {
-  filter: hue-rotate(60deg) contrast(200%) brightness(0.7);
-  filter: invert(1);
+  filter: contrast(200%) brightness(0.9) invert(1);
 }
 
 .saturate-image {
@@ -136,14 +145,6 @@
   flex-direction: column;
   gap: 25.8px;
   padding: 24px 25px;
-}
-
-.card__description {
-  font-weight: var(--card-description-font-wght);
-}
-
-.accent-card__description {
-  font-weight: var(--accent-card-description-font-wght);
 }
 
 .button__container {
