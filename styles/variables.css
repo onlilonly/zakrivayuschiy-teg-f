@@ -6,6 +6,7 @@
   --accent-card-description-font-wght: 410;
   --card-title-font-wght: 700;
   --accent-card-title-font-wght: 715;
+  --text-line-height: 21px;
   --bg-page-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -26,4 +27,9 @@
   --card-font-size: 18px;
 
   --text-stroke-color: #fff;
+  --accent-color: #000;
+  --basic-color: #fff;
+
+  --contour-color: black;
+  --animation-fill-color: #ff0000;
 }
