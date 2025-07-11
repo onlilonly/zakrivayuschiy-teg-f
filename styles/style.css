@@ -157,16 +157,21 @@
 .card__button {
   position: relative;
   border: none;
-  padding: 8px 37px;
-  outline: 2px solid var(--accent-color);
+  padding: 8px 0;
+  border: 2px solid var(--accent-color);
   overflow: hidden;
   font-family: var(--accent-text-font-family), fantasy;
+  text-align: center;
   background-color: var(--basic-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .card__button:focus {
+  outline: none;
+}
+
+.card__button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
@@ -265,6 +270,10 @@
   opacity: 0;
 }
 
+.card__like-button {
+  min-inline-size: 130px;
+}
+
 .button__text {
   position: relative;
   z-index: 1;
@@ -343,7 +352,7 @@
   }
 
   .card__button:not(.open__button) {
-    padding: 7px 36px;
+    padding: 7px 0;
   }
 
   .open__button {
