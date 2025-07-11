@@ -156,9 +156,8 @@
 
 .card__button {
   position: relative;
-  border: none;
-  padding: 8px 0;
   border: 2px solid var(--accent-color);
+  padding: 8px 0;
   overflow: hidden;
   font-family: var(--accent-text-font-family), fantasy;
   text-align: center;
